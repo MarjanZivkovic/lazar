@@ -158,6 +158,9 @@ select{
 .welcome{
     padding-bottom: 3rem;
 }
+.welcome p{
+    text-align: justify;
+}
 /* curvy lines */
 .custom-shape-divider-top-dark-blue, .custom-shape-divider-top-sky-blue{
     position: absolute;
@@ -246,6 +249,9 @@ select{
     background-color: #fff;
     color: #000;
 }
+#accordion .accordion-button{
+    color: var(--dark-blue);
+}
 /* media section */
 .blockquote-footer{
     font-size: 1rem;
@@ -256,6 +262,9 @@ select{
     min-height: 40vh;
 }
 /* map section */
+.map-row{
+    padding: 0;
+}
 #map{
     height: 300px;
     border:  2px solid var(--dark-blue);
@@ -266,6 +275,7 @@ select{
 /* footer */
 .footer{
     background: url(../assets/grass.jpg) no-repeat right bottom;
+    font-size: 0.8rem;
 }
 .footer > *{
     border-top: 1px solid;
@@ -278,7 +288,7 @@ select{
     background-color: rgba(197, 235, 228, 0.8);
     border-radius: 5px;
     padding: 0.25rem;
-    line-height: 1.8rem;
+    line-height: 1.5rem;
 }
 .current-year{
     font-family: 'Roboto Mono', monospace;
@@ -307,6 +317,9 @@ select{
 /* RESPONSIVE */
 /* small */
 @media (min-width: 576px){
+    .map-row{
+        padding: 0 1rem;
+    }
     #map{
         height: 400px;
     }
@@ -356,6 +369,9 @@ select{
     .num-item{
         width: 50%;
     }
+    .footer{
+        font-size: 1rem;
+    }
     .footer nav ul li{
         border-right: 1px solid;
     }
@@ -380,7 +396,7 @@ select{
     }
 }
 /* phone landscape */
-@media ( (orientation: landscape) and (max-width: 992px)){
+@media ( (orientation: landscape) and (max-width: 1280px)){
     .hero{
         background-position: right bottom;
     }
