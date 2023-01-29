@@ -6,6 +6,12 @@
     --sky-blue: #c5ebe4;
     --lazar-green: #84bf43;
 }
+
+/* u izradi - to be removed */
+.u-izradi{
+    min-height: 100vh;
+}
+
 /* general styles, resets */
 *{
     box-sizing: border-box;
@@ -107,7 +113,7 @@ select{
 }
 .nav-container{
     transform: translateX(-100vw);
-    transition: transform 0.6s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 .nav-container.opened{
     position: fixed;
@@ -396,9 +402,9 @@ select{
     }
 }
 /* phone landscape */
-@media ( (orientation: landscape) and (max-width: 1280px)){
+@media ( (orientation: landscape) and (max-width: 1200px)){
     .hero{
-        background-position: right bottom;
+        background-position: right bottom!important;
     }
 }
 /* extra large */

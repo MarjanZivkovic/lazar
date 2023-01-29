@@ -22,7 +22,9 @@ function handleNavigation(){
 
 menuButton.addEventListener('blur', () =>{ menuButton.style.border = 'none' });
 menuButton.addEventListener('click', handleNavigation);
-window.addEventListener('click', e =>{ e.target === navContainer ? handleNavigation() : false });
+if( window.innerWidth < 992 ){
+    window.addEventListener('click', e =>{ e.target === navContainer ? handleNavigation() : false });
+}
 
 // language select functionality
 const srbItems = document.querySelectorAll('.srb-item');
